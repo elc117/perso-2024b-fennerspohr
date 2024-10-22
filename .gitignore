@@ -3,4 +3,5 @@
 !*/
 *.o
 *.hi
-clave/.stack-work/
+.stack-work/
+.idea/

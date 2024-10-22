@@ -25,7 +25,8 @@ executable clave
                        scotty,
                        split,
                        random,
-                       random-shuffle
+                       random-shuffle,
+                       text
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
