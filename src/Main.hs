@@ -11,6 +11,7 @@ import System.Random.Shuffle (shuffle')
 import Text.Read (readMaybe)
 import Data.List.Split
 import qualified Data.Text as T
+import Network.Wai.Middleware.Cors
 
 data Lyric = Lyric {
       idLyric :: Int
@@ -44,10 +45,11 @@ convertString str =  read str
 
 main :: IO ()
 main = do
-  allLyrics <- (parseLyrics <$> readFile "src/teste.txt")
-  allAnswers <- (parseAnswers <$> readFile "src/teste.txt")
+  allLyrics <- (parseLyrics <$> readFile "src/letras.txt")
+  allAnswers <- (parseAnswers <$> readFile "src/letras.txt")
 
   scotty 3000 $ do
+    middleware simpleCors
     get "/listlyrics" $ do
       rng <- newStdGen
       json (shuffle' allLyrics (length allLyrics) rng)

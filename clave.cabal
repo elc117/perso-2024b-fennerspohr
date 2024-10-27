@@ -25,7 +25,8 @@ executable clave
                        split,
                        random,
                        random-shuffle,
-                       text
+                       text,
+                       wai-cors
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
