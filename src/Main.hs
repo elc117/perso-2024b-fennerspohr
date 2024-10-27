@@ -2,7 +2,6 @@
 {-# LANGUAGE DeriveGeneric #-}
 module Main (main) where
 
-import Data.Time (getCurrentTime)
 import Data.Char
 import Web.Scotty
 import Data.Aeson (FromJSON, ToJSON)
@@ -24,7 +23,7 @@ instance FromJSON Lyric
 
 parseLyrics :: String -> [Lyric]
 parseLyrics fileContents = do
-  [id', verse'] <- splitOn "|" <$> lines fileContents
+  [id', verse', song'] <- splitOn "|" <$> lines fileContents
   Just id'' <- return (readMaybe id')
   return (Lyric {idLyric = id'', verse = verse', song = "*"})
 
