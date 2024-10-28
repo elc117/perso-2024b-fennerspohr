@@ -50,11 +50,12 @@ Para execução do back-end:
 Para execução do front-end:
 - cd frontend
 - npm install
+- npm i -D daisyui@latest
 - npm run dev
 
 Observações:
 - Caso a execução seja feita pelo Codespaces, sugiro primeiro criar o terminal e rodar o back-end, depois abrir um novo terminal
-para executar o front.
+para executar o front. Também é necessário tornar a porta do back-end pública.
 - Para fins de teste, disponibilizei um arquivo "testes.txt" com apenas uma música. Para utilizá-lo, apenas substituir o valor
 de arquivoTxt, na linha 47 do arquivo /src/Main.hs por "src/testes.txt" e então dar o comando stack run novamente.
 
