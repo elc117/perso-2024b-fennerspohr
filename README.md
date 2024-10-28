@@ -39,13 +39,16 @@ No front-end utilizei o framwork Vue.js[16], Vite[17] para facilitar a construç
 e TailwindCSS[19] e DaisyUI[20] para a estilização.
 
 4.**Resultado final**\
-![fim.gif](fim.gif)
+
 ![teste-fim.gif](teste-fim.gif)
+
+Tela de ajuda e tela final:\
+![fim.gif](fim.gif)
 
 Para execução do back-end:
 `stack run --allow-different-user`
 
-\Para execução do front-end:
+Para execução do front-end:
 - cd frontend 
 - npm run dev
 
