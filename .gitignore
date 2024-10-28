@@ -5,3 +5,5 @@
 *.hi
 .stack-work/
 .idea/
+
+!LICENSE
