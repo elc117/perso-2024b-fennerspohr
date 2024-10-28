@@ -81,3 +81,4 @@ de arquivoTxt, na linha 47 do arquivo /src/Main.hs por "src/testes.txt" e então
    - [19] - https://tailwindcss.com/;
    - [20] - https://daisyui.com/;
    - Materiais disponibilizados pela professora.
+   - Chappell Roan, pelas músicas :)
