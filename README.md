@@ -48,7 +48,8 @@ Para execução do back-end:
 `stack run --allow-different-user`
 
 Para execução do front-end:
-- cd frontend 
+- cd frontend
+- npm install
 - npm run dev
 
 Observações:
