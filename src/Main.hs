@@ -43,10 +43,13 @@ checkAnswer userAnswer idL lyrics = (map toLower userAnswer) == map toLower (son
 convertString :: String -> Int
 convertString str =  read str
 
+arquivoTxt :: String
+arquivoTxt = "src/letras.txt"
+
 main :: IO ()
 main = do
-  allLyrics <- (parseLyrics <$> readFile "src/letras.txt")
-  allAnswers <- (parseAnswers <$> readFile "src/letras.txt")
+  allLyrics <- (parseLyrics <$> readFile arquivoTxt)
+  allAnswers <- (parseAnswers <$> readFile arquivoTxt)
 
   scotty 3000 $ do
     middleware simpleCors
