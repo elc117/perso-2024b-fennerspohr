@@ -58,6 +58,7 @@ Observações:
 para executar o front. Também é necessário tornar a porta do back-end pública.
 - Para fins de teste, disponibilizei um arquivo "testes.txt" com apenas uma música. Para utilizá-lo, apenas substituir o valor
 de arquivoTxt, na linha 47 do arquivo /src/Main.hs por "src/testes.txt" e então dar o comando stack run novamente.
+- Para alterar a url para qual é feita a requisição, alterar o valor de "getURL", na linha 5 do arquivo "frontend/src/App.vue".
 
 5.**Referências e créditos**
    - [1] - https://www.haskell.org/tutorial/io.html;
@@ -81,3 +82,4 @@ de arquivoTxt, na linha 47 do arquivo /src/Main.hs por "src/testes.txt" e então
    - [19] - https://tailwindcss.com/;
    - [20] - https://daisyui.com/;
    - Materiais disponibilizados pela professora.
+   - Chappell Roan, pelas músicas :)
