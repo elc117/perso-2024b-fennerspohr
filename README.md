@@ -32,6 +32,7 @@ Inicialmente, tentei declará-la dentro da função main, o que causou um ero qu
 configurei um, e tive dificuldades em entender como ele funciona e os erros encontrados. Um erro que demorei muito para entender
 e corrigir foi manter o comando "stack setup" junto com os comandos iniciais:\
 ![img.png](img.png)
+
 Essa configuração fazia com que o comando fosse executado antes das dependências necessárias serem propriamente configuradas.
 
 No front-end utilizei o framwork Vue.js[16], Vite[17] para facilitar a construção do projeto, Axios[18] para as requisições
@@ -39,7 +40,7 @@ e TailwindCSS[19] e DaisyUI[20] para a estilização.
 
 4.**Resultado final**\
 ![fim.gif](fim.gif)
-[teste.mp4](teste.mp4)
+![teste-fim.gif](teste-fim.gif)
 
 Para execução do back-end:
 `stack run --allow-different-user`
