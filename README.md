@@ -11,6 +11,6 @@ frontend:
  - tailwind css
  - axios
 
-para executar o front:
-    - cd frontend
+para executar o front: \
+    - cd frontend \
     - npm run dev
